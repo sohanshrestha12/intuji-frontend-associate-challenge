@@ -1,8 +1,8 @@
 :root {
-  --sidebar-bg-color: white;
   --card-bg-color: white;
   --body-bg-color: #f7f7fb;
   --text-dark-color: #0d163a;
+  --text-light-color: #0d163a;
   --accent-color: #4745a4;
   --highlight-color: #f9ba33;
   --green-color: #3bbb6e;
@@ -29,7 +29,7 @@ body {
 }
 
 aside {
-  background-color: var(--sidebar-bg-color);
+  background-color: var(--card-bg-color);
   color: var(--text-dark-color);
   display: flex;
   flex-direction: column;
@@ -165,7 +165,7 @@ nav {
 /*Css for left column */
 .main-content {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   width: 100%;
 }
 
@@ -200,7 +200,7 @@ nav {
 
 .search-input {
   width: 100%;
-  padding: 0.8rem 1rem 0.8rem 2.2rem;
+  padding: 1rem 1rem 1rem 2.2rem;
   border: none;
   border-radius: 999px;
   font-size: 1rem;
@@ -369,12 +369,118 @@ select {
 .profile {
   background-color: white;
   width: 100%;
-  padding: 1rem 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
 }
 
+.profile-icon {
+  width: 50px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+}
+.profile-icon:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.profile-img {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: rgb(224, 224, 224);
+}
+.profile-img:hover {
+  cursor: pointer;
+}
+
+/* saving-plan */
+.saving-plan {
+  margin-top: 1rem;
+  border-radius: 16px;
+  padding: 1rem;
+  background-color: var(--card-bg-color);
+}
+.saving-plan-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.saving-plan-header h2 {
+  font-size: 1rem;
+}
+
+.saving-plan-header p {
+  font-size: 0.8rem;
+  color: var(--accent-color);
+}
+.bill-vacation {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bill-vacation h4 {
+  font-size: 0.8rem;
+}
+
+.bill-vacation p {
+  font-size: 0.7rem;
+  color: var(--text-light-color);
+}
+
+.saving-plan-progress {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+.saving-plan-amount {
+  font-size: 0.7rem;
+  color: var(--text-light-color);
+  font-weight: 500;
+}
+.progress-percentage {
+  font-weight: 500;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-top: 0.8rem;
+}
+.progress-gap {
+  margin-bottom: 1.8rem;
+}
+.progress-bar {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.bar1 {
+  background-color: var(--accent-color);
+}
+
+.bar2 {
+  background-color: var(--highlight-color);
+}
+.bar3 {
+  background-color: var(--green-color);
+}
 @media (max-width: 768px) {
   aside {
     width: 70px;
