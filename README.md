@@ -21,3 +21,4 @@ project-root/
 ---
 
 ## 📷 Screenshots
+![Screenshot 2025-05-10 221116](https://github.com/user-attachments/assets/669ce617-04a9-465b-8151-995838d13223)
