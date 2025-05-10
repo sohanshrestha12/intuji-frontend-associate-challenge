@@ -405,23 +405,27 @@ select {
 }
 
 /* saving-plan */
-.saving-plan {
+.saving-plan,
+.recent-transaction {
   margin-top: 1rem;
   border-radius: 16px;
   padding: 1rem;
   background-color: var(--card-bg-color);
 }
-.saving-plan-header {
+.saving-plan-header,
+.recent-transaction-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
-.saving-plan-header h2 {
+.saving-plan-header h2,
+.recent-transaction-header h2 {
   font-size: 1rem;
 }
 
-.saving-plan-header p {
+.saving-plan-header p,
+.recent-transaction-header p {
   font-size: 0.8rem;
   color: var(--accent-color);
 }
@@ -481,6 +485,32 @@ select {
 .bar3 {
   background-color: var(--green-color);
 }
+
+/* recent transaction css */
+.recent-transaction-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.recent-transaction-content .recent-transaction-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.recent-transaction-content .recent-transaction-profile p {
+  font-size: 0.7rem;
+  color: var(--text-light-color);
+}
+.recent-transaction-content .recent-transaction-amount .transaction-amount {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.recent-transaction-content .recent-transaction-amount .transaction-status {
+  font-size: 0.75rem;
+  color: var(--green-color);
+}
+
 @media (max-width: 768px) {
   aside {
     width: 70px;
@@ -494,7 +524,7 @@ select {
     display: none;
   }
   .main-content {
-    width: 80%;
+    width: 90%;
   }
   .nav-link i {
     font-size: 1.5rem;
