@@ -17,3 +17,7 @@ project-root/
 ├── assets/
 │   └── images
 └── README.md
+
+---
+
+## 📷 Screenshots
