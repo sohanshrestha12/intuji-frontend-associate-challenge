@@ -223,14 +223,52 @@
               </div>
             </div>
           </div>
+          <div class="analytics">
+            <div class="analytics-header">
+              <h2 class="analytics-title">Analytics</h2>
+              <div class="analytics-label">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    font-size: 0.8rem;
+                  "
+                >
+                  <div class="analytics-indicator accent"></div>
+                  <p>Label 1</p>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    font-size: 0.8rem;
+                  "
+                >
+                  <div class="analytics-indicator highlight"></div>
+                  <p>Label 2</p>
+                </div>
+                <select id="expense-category" name="category">
+                  <option value="Weekly">Weekly</option>
+                  <option value="Monthly">Monthly</option>
+                  <option value="Yearly">Yearly</option>
+                  <option value="Daily">Daily</option>
+                </select>
+              </div>
+            </div>
+            <canvas id="analytics-chart" height="200"></canvas>
+          </div>
         </section>
-        <section class="right-column">2</section>
+        <section class="right-column"></section>
       </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script
       src="https://kit.fontawesome.com/807931b0b9.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/chart.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

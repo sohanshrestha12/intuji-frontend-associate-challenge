@@ -5,6 +5,7 @@
   --text-dark-color: #0d163a;
   --accent-color: #4745a4;
   --highlight-color: #f9ba33;
+  --green-color: #3bbb6e;
 }
 
 * {
@@ -23,6 +24,7 @@ body {
 .container {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   width: 100%;
 }
 
@@ -320,23 +322,81 @@ nav {
   margin-top: 1rem;
 }
 
+/* analytics css */
+.analytics {
+  margin-top: 1rem;
+  border-radius: 16px;
+  padding: 1rem;
+  background-color: var(--card-bg-color);
+}
+
+.analytics-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.analytics-title {
+  font-size: 1rem;
+}
+.analytics-header .analytics-label {
+  display: flex;
+  gap: 1rem;
+}
+
+.analytics-indicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+.analytics-indicator.accent {
+  background-color: var(--accent-color);
+}
+
+.analytics-indicator.highlight {
+  background-color: var(--highlight-color);
+}
+select {
+  padding: 0.3rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.8rem;
+}
+
+/* profile css  */
+.profile {
+  background-color: white;
+  width: 100%;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 @media (max-width: 768px) {
   aside {
     width: 70px;
   }
 
   aside.collapsed {
-    width: 80px;
+    width: 70px;
   }
 
   .menu-toggle {
     display: none;
   }
-
+  .main-content {
+    width: 80%;
+  }
   .nav-link i {
     font-size: 1.5rem;
   }
   .main-content {
+    flex-direction: column;
+  }
+  .analytics-header {
     flex-direction: column;
   }
 }
