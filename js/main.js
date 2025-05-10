@@ -12,6 +12,17 @@ function toggleSidebar() {
   }
 }
 
+document.querySelectorAll(".nav-item").forEach((item) => {
+  if (!item.classList.contains("logout")) {
+    item.addEventListener("click", function () {
+      document
+        .querySelectorAll(".nav-item:not(.logout)")
+        .forEach((el) => el.classList.remove("active"));
+      this.classList.add("active");
+    });
+  }
+});
+
 function checkScreenSize() {
   if (window.innerWidth <= 768) {
     sidebar.classList.add("collapsed");
