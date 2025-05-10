@@ -10,11 +10,11 @@ A responsive and modern dashboard layout built with **HTML5** and **CSS3** only,
   - `index.html`
   - `styles/`
     - `style.css`
-  - `scripts/`
+  - `js/`
     - `script.js`  
     - `chart.js` 
   - `assets/`
-    - `images/`, `icons/`, etc.
+    - `images/`
   - `README.md`
 
 ---
@@ -32,7 +32,12 @@ A responsive and modern dashboard layout built with **HTML5** and **CSS3** only,
 
 ```bash
 git clone https://github.com/sohanshrestha12/intuji-frontend-associate-challenge.git
+```
 
 ---
 
+## 🌐 Live Demo
+
+You can view a live demo of the project here:  
+[**Live Demo**]https://sohanshrestha12.github.io/intuji-frontend-associate-challenge/
 
