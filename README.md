@@ -6,17 +6,7 @@ A responsive and modern dashboard layout built with **HTML5** and **CSS3** only,
 
 ## 📁 Folder Structure
 
-project-root/
-│
-├── index.html
-├── styles/
-│   └── style.css
-├── scripts/
-│   ├── script.js             
-│   └── chart.js          
-├── assets/
-│   └── images
-└── README.md
+<pre> ```plaintext project-root/ │ ├── index.html ├── styles/ │ └── style.css ├── scripts/ │ ├── script.js # (optional, for sidebar toggle or animations) │ └── chart.min.js # <-- Chart.js file added here ├── assets/ │ └── images/, icons/, etc. └── README.md ``` </pre>
 
 ---
 
