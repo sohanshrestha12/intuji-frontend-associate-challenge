@@ -20,6 +20,12 @@ body {
   background-color: var(--body-bg-color);
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 aside {
   background-color: var(--sidebar-bg-color);
   color: var(--text-dark-color);
@@ -41,7 +47,7 @@ aside {
 }
 
 .image-wrapper {
-  background-color: rgb(207, 204, 204);
+  background-color: rgb(224, 224, 224);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -148,6 +154,60 @@ nav {
   font-size: 1.2rem;
   min-width: 24px;
   text-align: center;
+}
+
+.main-content {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.left-column {
+  flex: 2;
+  padding: 1rem;
+}
+
+.right-column {
+  flex: 1;
+  padding: 1rem;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.2rem;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-input::placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #999;
+}
+
+.search-input:focus {
+  border-color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
