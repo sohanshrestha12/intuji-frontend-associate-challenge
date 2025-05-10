@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <aside id="sidebar">
+        <div class="sidebar-header">
+          <button class="menu-toggle" onclick="toggleSidebar()">
+            <i class="icon">≡</i>
+          </button>
+          <div class="image-wrapper">
+            <img src="./assets/images/gallery.svg" alt="img" />
+          </div>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item active">
+              <a href="#" class="nav-link">
+                <i class="fas fa-tachometer-alt"></i>
+                <span class="nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span class="nav-text">Schedule</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa-regular fa-envelope"></i>
+                <span class="nav-text">Messages</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span class="nav-text">Analytics</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-users"></i>
+                <span class="nav-text">Team</span>
+              </a>
+            </li>
+            <li class="nav-item separator"></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-user"></i>
+                <span class="nav-text">Profile</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-cogs"></i>
+                <span class="nav-text">Settings</span>
+              </a>
+            </li>
+            <div class="nav-end">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-question-circle"></i>
+                  <span class="nav-text">Help</span>
+                </a>
+              </li>
+              <li class="nav-item logout">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span class="nav-text">Logout</span>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/807931b0b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
