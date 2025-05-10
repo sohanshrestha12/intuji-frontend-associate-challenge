@@ -24,7 +24,7 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  max-width: 1520px;
   width: 100%;
 }
 
@@ -543,5 +543,40 @@ select {
   }
   .analytics-header {
     flex-direction: column;
+  }
+  .card {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 480px) {
+  aside {
+    width: 60px;
+  }
+
+  aside.collapsed {
+    width: 60px;
+  }
+
+  .main-content {
+    width: 80%;
+  }
+  .nav-link i {
+    font-size: 1.5rem;
+  }
+  .main-content {
+    flex-direction: column;
+  }
+  .analytics-header {
+    flex-direction: column;
+  }
+  .profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card {
+    flex: 1 1 100%;
+    min-width: unset;
   }
 }
