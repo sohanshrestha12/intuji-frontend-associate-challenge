@@ -6,9 +6,33 @@ A responsive and modern dashboard layout built with **HTML5** and **CSS3** only,
 
 ## 📁 Folder Structure
 
-<pre> ```plaintext project-root/ │ ├── index.html ├── styles/ │ └── style.css ├── scripts/ │ ├── script.js # (optional, for sidebar toggle or animations) │ └── chart.min.js # <-- Chart.js file added here ├── assets/ │ └── images/, icons/, etc. └── README.md ``` </pre>
+- `project-root/`
+  - `index.html`
+  - `styles/`
+    - `style.css`
+  - `scripts/`
+    - `script.js`  
+    - `chart.js` 
+  - `assets/`
+    - `images/`, `icons/`, etc.
+  - `README.md`
 
 ---
 
 ## 📷 Screenshots
 ![Screenshot 2025-05-10 221116](https://github.com/user-attachments/assets/669ce617-04a9-465b-8151-995838d13223)
+
+---
+
+## 🧰 How to Use
+
+1. Clone this repository or download the `.zip` file.
+2. Open `index.html` in your browser.
+3. Customize content and styles as needed.
+
+```bash
+git clone https://github.com/sohanshrestha12/intuji-frontend-associate-challenge.git
+
+---
+
+
